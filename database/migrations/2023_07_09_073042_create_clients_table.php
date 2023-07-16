@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('phone_number');
             $table->string('address');
             $table->date('birth_date');
+            $table->string('email')->unique();
             $table->decimal('initial_deposit',10,2);
             $table->timestamps();
         });
